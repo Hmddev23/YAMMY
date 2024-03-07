@@ -1,0 +1,247 @@
+
+/*
+==========
+GLOBAL CSS
+==========
+*/
+
+* {
+  box-sizing: border-box;
+  scroll-padding-top: 3em;
+  font-family: 'Poppins', ui-sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: var(--margin-lg);
+  width: auto !important;
+  font-family: 'Poppins', ui-sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  line-height: 1.75;
+  position: relative;
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    margin: var(--margin-md);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    gap: 2em;
+    margin-top: 6em;
+  }
+}
+
+.small {
+  font-size: var(--small) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.5;
+  margin: 0;
+}
+
+p,
+small,
+a,
+li,
+table {
+  line-height: 2.25;
+  margin: 0;
+}
+
+/* text styles */
+
+h1 {
+  font-size: var(--h1);
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--h2);
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--h3);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--h4);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: var(--h5);
+  font-weight: 400;
+}
+
+a {
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: var(--p);
+  letter-spacing: normal;
+  text-align: left;
+}
+
+::selection {
+  background-color: var(--accent);
+}
+
+li {
+  font-size: var(--p);
+  margin-top: 0.2rem;
+}
+
+pre {
+  font-size: var(--p);
+}
+
+small {
+  font-size: var(--small);
+}
+
+button {
+  font-size: var(--p);
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.link {
+  font-size: inherit;
+  background-position-y: -0%;
+  background-image: linear-gradient(180deg, transparent 50%, var(--accent) 50%) !important;
+  transition: all 0.1s ease;
+  background-size: 2px;
+  background-size: auto 190%;
+  padding: 3px 0;
+}
+
+.link:hover {
+  background-position-y: 5%;
+  transition: all 0.1s ease;
+}
+
+.link.reversed {
+  background-position-y: -0%;
+  background-image: linear-gradient(180deg, transparent 50%, var(--text) 50%) !important;
+  transition: all 0.1s ease;
+  background-size: 2px;
+  background-size: auto 190%;
+  padding: 3px 0;
+}
+
+.link.reversed:hover {
+  background-position-y: 5%;
+  transition: all 0.1s ease;
+}
+
+.utility-link {
+  background-image: linear-gradient(180deg, transparent 50%, var(--static7) 50%) !important;
+  color: var(--static2);
+  font-size: inherit;
+}
+
+.utility-link:hover {
+  background-image: linear-gradient(180deg, transparent 50%, var(--static7) 50%) !important;
+  color: var(--static2);
+}
+
+/* root div */
+#root {
+  display: contents;
+}
+
+/* app div */
+.app {
+  display: contents;
+}
+
+/* buttons */
+.primary-button {
+  padding: 0.5em 2em;
+  background-color: var(--primary);
+  color: var(--bg);
+  border-radius: 6px;
+  transition: transform ease 0.2s, box-shadow ease 0.2s;
+  display: inline-block;
+  font-size: var(--p);
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.primary-button:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 20px 80px -10px var(--primary);
+}
+
+.secondary-button {
+  padding: 0.5em 2em;
+  background-color: var(--secondary);
+  color: var(--text);
+  border-radius: 6px;
+  display: inline-block;
+  font-size: var(--p);
+  z-index: 1;
+  cursor: pointer;
+  transition: transform ease 0.2s;
+  white-space: nowrap;
+}
+
+.secondary-button:hover {
+  transform: translate(0, -3px);
+  transition: transform ease 0.2s;
+}
+
+@media screen and (max-width: 1000px) {
+  .primary-button, .secondary-button {
+    text-align: center;
+  }
+}

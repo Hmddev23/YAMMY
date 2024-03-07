@@ -1,0 +1,111 @@
+
+/*
+================
+TESTIMONIALS CSS
+================
+*/
+
+/* testimonials container */
+.section.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.part-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.part-heading.center {
+  align-items: center;
+}
+
+.part-heading > h2 {
+  text-align: center;
+}
+
+/* testimonials cards */
+.section-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-cards {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+/* testimonials card */
+.section-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 3em;
+  gap: 20px;
+  background-color: var(--static11);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-card {
+    width: 100%;
+  }
+}
+
+/* testimonials card reviewers */
+.reviewer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.reviewer-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  border: 2px solid var(--text);
+  position: relative;
+}
+
+.r-one {
+  background-color: var(--primary);
+}
+
+.r-two {
+  background: var(--static4);
+}
+
+.r-three {
+  background: linear-gradient(45deg,var(--primary),var(--accent));
+}
+
+.reviewer-name,
+.review {
+  font-size: var(--p);
+}
+
+.rating {
+  align-self: flex-start;
+}
+
+/* testimonials card reviewers icon */
+.reviewer-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

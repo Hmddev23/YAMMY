@@ -1,0 +1,135 @@
+
+/*
+========
+ROOT CSS
+========
+*/
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+
+:root[data-theme="light"] {
+  --text: #000000;
+  --bg: #ffffff;
+  --primary: #28e269;
+  --secondary: #e8e8e8;
+  --accent: #0c72ed;
+  --static: rgba(225, 225, 225, 0.5);
+  --static2: #0f0f0f;
+  --static3: rgba(35, 35, 35, 0.2);
+  --static4: rgba(35, 35, 35, 0.3);
+  /* --static3: rgb(255, 255, 255); */
+  /* --static4: rgba(225, 225, 225, 0.2); */
+  --static5: rgb(24, 172, 122);
+  --static6: rgba(0, 0, 0, 0.05);
+  --static7: rgba(0, 0, 0, 0.1);
+  --static8: rgba(0, 0, 0, 0.05);
+  --static9: rgba(0, 0, 0, 0.3);
+  --static10: rgba(225, 225, 225);
+  --static11: rgba(0, 0, 0, 0.03);
+  --static12: rgba(255, 255, 255, 0.8);
+  --static13: rgb(235, 235, 235);
+  --textcontrast: #64d97b;
+  --bgcontrast: #64d97b;
+  --primarycontrast: #64d97b;
+  --secondarycontrast: #64d97b;
+  --accentcontrast: #64d97b;
+
+  --error: #D74242;
+  --warning: #EF7918;
+  --success: #418944;
+  --info: #1893D5;
+  --error-bg: #FDEDED;
+  --warning-bg: #FFF4E5;
+  --success-bg: #EDF7ED;
+  --info-bg: #E5F6FD;
+}
+
+:root[data-theme="dark"] {
+  --text: #ffffff;
+  --bg: #000000;
+  --primary: #1dd75e;
+  --secondary: #161616;
+  --accent: #1277f3;
+  --static: rgba(0, 0, 0, 0.5);
+  --static2: #f0f0f0;
+  --static3: rgb(24, 24, 24);
+  --static4: rgb(40, 40, 40);
+  --static5: rgb(24, 172, 122);
+  --static6: rgba(255, 255, 255, 0.15);
+  --static7: rgba(255, 255, 255, 0.1);
+  --static8: rgba(255, 255, 255, 0.05);
+  --static9: rgba(255, 255, 255, 0.3);
+  --static10: rgb(40, 40, 40);
+  --static11: rgba(255, 255, 255, 0.03);
+  --static12: rgba(0, 0, 0, 0.8);
+  --static13: rgb(40, 40, 40);
+  --textcontrast: #64d97b;
+  --bgcontrast: #64d97b;
+  --primarycontrast: #64d97b;
+  --secondarycontrast: #64d97b;
+  --accentcontrast: #64d97b;
+
+  --error: #DE3E32;
+  --warning: #E89823;
+  --success: #5DAB61;
+  --info: #26A6E0;
+  --error-bg: #160B0B;
+  --warning-bg: #191207;
+  --success-bg: #0C130D;
+  --info-bg: #071318;
+}
+
+:root {
+  font-family: 'Poppins', ui-sans-serif;
+  --font-scale: 1.333;
+  --h1: calc(var(--h2) * var(--font-scale));
+  --h2: calc(var(--h3) * var(--font-scale));
+  --h3: calc(var(--h4) * var(--font-scale));
+  --h4: calc(var(--h5) * var(--font-scale));
+  --h5: calc(var(--p) * var(--font-scale));
+  --p: 1rem;
+  --small: calc(var(--p) / var(--font-scale));
+  --margin-lg: 0 12%;
+  --margin-md: 0 12%;                                     /* fixed the 12%  for the page margin width*/
+
+  --black: #000000;
+  --white: #ffffff;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Poppins var', ui-sans-serif;
+  }
+}
+
+
+/*
+=============
+SCROLLBAR CSS
+=============
+*/
+
+::-webkit-scrollbar {
+  margin-left: 1em;
+  width: 8px;
+  height: 3px;
+  background-color: rgba(131, 131, 131, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(129, 129, 129, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(129, 129, 129, 0.9);
+}

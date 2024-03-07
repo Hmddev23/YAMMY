@@ -1,0 +1,149 @@
+
+/*
+=========
+BENTO CSS
+=========
+*/
+
+.bento {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.bento-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: 60% 40%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .bento-wrapper {
+    grid-template-columns: 1fr!important;
+    grid-template-rows: repeat(4,1fr)!important;
+  }
+}
+
+.bento-wrapper li {
+  list-style-type: none;
+  padding: 5rem 1rem;
+  text-align: center;
+  max-width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 10px;
+}
+
+/* first bento box, row-1 col-1 */
+.first-row-col1 {
+  grid-area: 1 / 1 / 2 / 5;
+}
+
+.primary-color-box {
+  background-color: var(--primary);
+  color: var(--text);
+  font-size: var(--h1);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* second bento box, row-1, col-2 */
+.first-row-col2 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.secondary-color-box {
+  background-color: var(--secondary);
+  color: var(--text);
+  font-size: var(--h2);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* third bento box, row-2 col-1 */
+.second-row-col1 {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.text-color-box {
+  position: relative;
+  background-color: var(--text);
+  color: var(--bg);
+  font-size: var(--h3);
+  margin: 0;
+}
+
+/* fourth bento box, row-2 col-2 */
+.second-row-col2 {
+  grid-area: 2 / 4 / 3 / 6;
+}
+
+.accent-color-box {
+  background-color: var(--accent);
+  color: var(--text);
+  font-size: var(--h3);
+  margin: 0;
+}
+
+/* fourth bento box spotify icon */
+.spotify-icon {
+  position: absolute;
+  left: -100px;
+  height: 120%;
+  opacity: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  .spotify-icon {
+    left: -100px !important;
+    height: 70% !important;
+    top: 50%;
+  }
+}
+
+/* responsive bento boxes */
+@media screen and (max-width: 1000px) {
+  .first-row-col1,
+  .first-row-col2,
+  .second-row-col1,
+  .second-row-col2 {
+    grid-area: auto!important;
+  }
+}
+
+/* bento boxes links  */
+.link.bento-link {
+  background-position-y: -0%;
+  background-image: linear-gradient(180deg, transparent 50%, var(--bg) 50%)!important;
+  transition: all .1s ease;
+  background-size: 2px;
+  background-size: auto 190%;
+  padding: 3px 0;
+}
+
+.link.bento-link.blue-bento-box {
+  background-image: linear-gradient(180deg, transparent 50%, rgb(255, 255, 255) 50%)!important;
+}
+
+
+.link.bento-link:hover {
+  background-position-y: 5%;
+  transition: all .1s ease;
+}
+
+.bento-link {
+  font-size: var(--p);
+}

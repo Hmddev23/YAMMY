@@ -1,0 +1,78 @@
+
+/*
+=======
+WHY CSS
+=======
+*/
+
+.section.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* why cards */
+.section-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-cards {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+/* why card */
+.section-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 3em;
+  gap: 20px;
+  background-color: var(--static11);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .section-card {
+    width: 100%;
+  }
+}
+
+/* why card image */
+.section-card-img {
+  height: 5rem;
+  color: var(--accent);
+}
+
+/* why card title */
+.highlight {
+  font-weight: 400;
+  z-index: 5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.highlight:before {
+  content: "";
+  height: var(--before-height, 50%);
+  width: 100%;
+  display: block;
+  z-index: -5;
+  opacity: 30%;
+  position: absolute;
+  transition: all .3s ease;
+  background: linear-gradient(180deg,transparent 50%,var(--accent) 50%);
+}

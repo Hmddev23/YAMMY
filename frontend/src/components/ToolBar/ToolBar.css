@@ -1,0 +1,155 @@
+
+/* 
+===========
+TOOLBAR CSS
+===========
+*/
+
+.option-settings *,
+.utility * {
+  font-family: inherit !important;
+}
+
+/* toolbar general */
+.toolbar {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--static);
+  padding: 6px;
+  border-radius: 6px;
+  gap: 6px;
+  z-index: 9999!important;
+}
+
+@media screen and (max-width: 1200px) {                 /* fix THIS FOR RESPONSIVENESS SMALLER BUTTON */
+  .toolbar {
+    /* bottom: 2em; */
+    /* width: 50%; */
+  }
+}
+
+/* toolbar buttons container */
+.color-tools-span {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* theme button */
+.option {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  cursor: pointer;
+  gap: 0.5em;
+  border-radius: 4px;
+  user-select: none;
+  position: relative;
+  height: 60px;
+  transition: outline .1s ease;
+  outline: transparent solid 2px;
+  outline-offset: -1px;
+  font-size: var(--p);
+}
+
+.option:hover {
+  outline: 2px solid #7c7c7c6f;
+  transition: outline .1s ease;
+}
+
+.theme {
+  color: var(--static2);
+  background-color: var(--static3);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  padding: 1em;
+}
+
+.darkorlight-cont {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 30px;
+}
+
+.darkorlight-wrapper {
+  height: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* transform: translateY(-30px); */
+
+  position: relative;                                                            /* fix this svg on top of eachother */
+}
+
+.darkorlight-wrapper > svg {
+  position: absolute;
+  top: 0;
+  display: block;
+}
+
+/* hover to show message */
+.option-hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.option-hover:hover~.tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+/* message */
+.tooltip {
+  font-size: 14px;
+}
+
+.option .tooltip {
+  visibility: hidden;
+  width: max-content;
+  background-color: #000c;
+  backdrop-filter: blur(20px);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.controls-tooltip {
+  font-size: 12px;
+  opacity: 50%;
+}
+
+.controls-tooltip {
+  font-size: 12px;
+  opacity: 50%;
+}
+
+.option .tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0,0,0,.8) transparent transparent transparent;
+  backdrop-filter: blur(20px);
+}

@@ -1,0 +1,264 @@
+
+/*
+==========
+FOOTER CSS
+==========
+*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8em;
+  margin: 6rem 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+  border-radius: 10px;
+  background-color: var(--static8);
+  color: var(--text);
+  padding: 3em 5em;
+  width: 100%;
+  margin-bottom: 10em;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-container {
+    padding: 3em;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.logoface {
+  width: 30px;
+  transform: rotate(0);
+}
+
+.sitename {
+  font-size: var(--p);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* footer columns */
+.footer-cols {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3em;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-cols {
+    flex-direction: column;
+  }
+}
+
+/* footer first column */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* support icon */
+img.support-img {
+  display: initial !important;
+  vertical-align: middle;
+  height: 13px !important;
+  width: 20px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0!important;
+  border: none;
+  margin-top: 0;
+  margin-right: 5px !important;
+  margin-left: 0 !important;
+  margin-bottom: 3px !important;
+  content: url('../../assets/favicon.png');
+}
+
+.support-img:after {
+  vertical-align: middle;
+  height: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  margin-top: 0;
+  margin-right: 6px;
+  margin-left: 0;
+  margin-bottom: 4px !important;
+  content: url('../../assets/favicon.png');
+}
+
+.btn-container{
+  display: inline-block !important;
+  white-space: nowrap;
+  min-width: 160px
+}
+
+span.support-text {
+  color:#fff !important;
+  letter-spacing: -0.15px !important;
+  text-wrap: none;
+  vertical-align: middle;
+  line-height: 33px !important;
+  padding: 0;
+  text-align: center;
+  text-decoration: none !important;
+  text-shadow: 0 1px 1px rgba(34, 34, 34, 0.05);
+}
+
+.support-text a {
+  color:#fff !important;
+  text-decoration: none !important;
+}
+
+.support-text a:hover {
+  color:#fff !important;
+  text-decoration: none
+}
+
+a.support-button{
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  line-height: 36px !important;
+  min-width: 150px;
+  display: inline-block !important;
+  background-color:#29abe0;
+  padding: 2px 12px !important;
+  text-align: center !important;
+  border-radius: 7px;
+  color:#fff;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+  border: 0 none #fff !important;
+  font-family: 'Quicksand', Helvetica, Century Gothic, sans-serif !important;
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: 700 !important;
+  font-size: 14px !important
+}
+
+a.support-button:visited {
+  color:#fff !important;
+  text-decoration: none !important
+}
+
+a.support-button:hover {
+  opacity: .85;
+  color:#f5f5f5 !important;
+  text-decoration: none !important
+}
+
+a.support-button:active {
+  color:#f5f5f5 !important;
+  text-decoration: none !important
+}
+
+.support-text img.support-img {
+  height: 22px !important;
+  width: 22px !important;
+  display: initial;
+  animation: support-wiggle 3s infinite;
+}
+
+@keyframes support-wiggle {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  60% {
+    transform: rotate(0) scale(1);
+  }
+  75% {
+    transform: rotate(0) scale(1.12);
+  }
+  80% {
+    transform: rotate(0) scale(1.1);
+  }
+  84% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  88% {
+    transform: rotate(10deg) scale(1.1);
+  }
+  92% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  96% {
+    transform: rotate(10deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+
+/* footer second col */                               /* fix this i commented this since it impact the mobile menu */
+.menu-item {
+  font-size: var(--p);
+  width: 100%;
+  white-space: nowrap;
+  background-color: transparent;
+  padding: 0 1rem;
+  border-radius: 6px;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item-header {
+  opacity: 50%;
+}
+
+.footer-col > .menu-item {
+  padding: 0;
+}
+
+/* footers bottom links */
+.link {
+  font-size: inherit;
+  background-position-y: -0%;
+  background-image: linear-gradient(180deg, transparent 50%, var(--accent) 50%) !important;
+  transition: all 0.1s ease;
+  background-size: 2px;
+  background-size: auto 190%;
+  padding: 3px 0;
+}
+
+.link:hover {
+  background-position-y: 5%;
+  transition: all 0.1s ease;
+}
+
+.link.reversed {
+  background-position-y: -0%;
+  background-image: linear-gradient(180deg, transparent 50%, var(--text) 50%) !important;
+  transition: all 0.1s ease;
+  background-size: 2px;
+  background-size: auto 190%;
+  padding: 3px 0;
+}

@@ -1,0 +1,134 @@
+
+/*
+===========
+PRICING CSS
+===========
+*/
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+}
+
+.part-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.part-heading.center {
+  align-items: center;
+}
+
+.part-heading > h2 {
+  text-align: center;
+}
+
+/* pricing cards */
+.pricing-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .pricing-cards {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+/* pricing card */
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  padding: 1em 3em 3em;
+  position: relative;
+  gap: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+  .pricing-card {
+    width: 100%;
+  }
+}
+
+.pricing-card-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.promo-text {
+  color: var(--primary);
+}
+
+.pricing-card-text > p {
+  text-align: center;
+}
+
+/* pricing card list */
+.pricing-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.check-icon {
+  width: 20%;
+}
+
+.list-item {
+  width: 80%;
+}
+
+/* pricing background */
+.pricing-bg {
+  background-color: var(--secondary);
+  opacity: 20%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  z-index: -5;
+  top: 0;
+  left: 0;
+}
+
+.best {
+  border: none;
+  background-color: var(--primary);
+  opacity: 15%;
+}

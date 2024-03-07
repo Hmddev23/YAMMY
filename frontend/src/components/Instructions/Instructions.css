@@ -1,0 +1,124 @@
+
+/*
+================
+INSTRUCTIONS CSS
+================
+*/
+
+.info-box {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 3em 5em;
+  display: flex;
+  flex-direction: row;
+  gap: 6em;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .info-box, .info-box-right {
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .info-box {
+    flex-direction: column;
+  }
+}
+
+/* instructions left box */
+.info-box-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* instructions right box */
+.info-box-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 5em;
+}
+
+.step {
+  width: 30%;
+  flex-grow: 2;
+}
+
+.one:before {
+  content: "1";
+  font-size: var(--h3);
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-1em);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.two:before {
+  content: "2";
+  font-size: var(--h3);
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-1em);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.three:before {
+  content: "3";
+  font-size: var(--h3);
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-1em);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.four:before {
+  content: "4";
+  font-size: var(--h3);
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-1em);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.five:before {
+  content: "5";
+  font-size: var(--h3);
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-1em);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.six:before {
+  content: "6";
+  font-size: var(--h3);
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-1em);
+  color: var(--accent);
+  line-height: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .step {
+    width: 100%;
+  }
+}
+
+/* instructions box responsiveness */
+@media screen and (max-width: 1000px) {
+  .info-box-left,
+  .info-box-right {
+    width: 100%;
+  }
+}

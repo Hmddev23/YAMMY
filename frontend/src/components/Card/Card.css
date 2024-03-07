@@ -1,0 +1,233 @@
+
+/*
+========
+CARD CSS
+========
+*/
+
+/* card style */
+.search-cards .card {
+  /* border-radius: 6px; */
+}
+
+.card-hover {
+  background: var(--static3);
+  border-radius: 6px;
+  isolation: isolate;
+  padding: 10px;
+  position: relative;
+  transition: background-color .3s ease;
+  width: 100%;
+}
+
+.card-hover .card-artist,
+.card-hover button {
+  position: relative;
+  z-index: 1;
+}
+
+.card-hover:hover {
+  background: var(--static4);
+}
+
+.card-hover:hover::before {
+  opacity: 1;
+}
+
+.card-hover::before,
+.card-hover::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.card-hover::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.1),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.card-hover::after {  
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.8),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.card-data-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.card-image-container {
+  background-color: var(--card-color,--static3);
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.5);
+  position: relative;
+  max-width: 150px;
+  max-height: 150px;
+  padding-bottom: 0;
+}
+
+.card-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.artist-img {
+  border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+  .card-image-container {
+    max-width: 175px;
+    max-height: 175px;
+  }
+}
+
+.card-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.truncate-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+}
+
+.card-type {
+  background-color: var(--primary);
+  border-radius: 500px;
+  display: inline;
+  padding: 1px 12px;
+  font-weight: 600;
+  box-sizing: border-box;
+  color: var(--black);
+  text-align: center;
+  width: fit-content;
+}
+
+.card-title {
+  color: var(--text);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.card-explicit-artist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-explicit {
+  margin-right: 8px;
+  padding: 3px 5px;
+  background-color: hsla(0,0%,100%,.6);
+  height: 16px;
+  border-radius: 2px;
+  color: var(--static3);
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+
+.card-artist {
+  /* color: var(--static2); */
+  color: #8a8c8d;
+}
+
+.card-hover::before .card-artist:hover {
+  text-decoration: underline;
+}
+
+/* card buttons */
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  border-radius: 500px;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0 8px 12px rgba(0,0,0,.3);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  transform: translateY(8px);
+  transition: all .3s ease;
+  flex-shrink: 0;
+}
+
+.card-hover:hover .card-buttons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-button {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  touch-action: manipulation;
+  transition-duration: 33ms;
+  transition-property: background-color, border-color, color, box-shadow, filter, transform;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+  padding: 0px;
+  min-inline-size: 0px;
+  margin-top: 4px;
+}
+
+.card-button-span {
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--primary);
+  color: var(--black);
+  display: flex;
+  border-radius: 9999px;
+  font-size: inherit;
+  align-items: center;
+  justify-content: center;
+  inline-size: 48px;
+  block-size: 48px;
+}
+
+@supports (overflow-wrap:anywhere) {
+  .card-button-span {
+    overflow-wrap: anywhere;
+  }
+}
+
+.card-button-icon {
+  display: flex;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: calc((48px - 24px) / 2);
+  left: calc((48px - 24px) / 2);
+  fill: var(--black);
+}

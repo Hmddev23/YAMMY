@@ -1,0 +1,123 @@
+
+/*
+=======
+FAQ CSS
+=======
+*/
+
+/* faq container */
+.faq-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 2em;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .faq-section {
+    flex-direction: column;
+  }
+}
+
+.part-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.part-heading.left {
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1000px) {
+  .part-heading.left {
+    align-items: center;
+  }
+}
+
+.part-heading > h2 {
+  text-align: center;
+}
+
+/* faq list */
+.faq-list {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .faq-list {
+    width: 100%;
+  }
+}
+
+/* faq content */
+.faq-cont {
+  border-radius: 10px;
+  background-color: var(--secondary);
+  position: relative;
+  width: 100%;
+}
+
+/* faq questions */
+.faq {
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.faq-icon {
+  transform: rotate(0);
+  transition: all ease-in-out .2s;
+  max-width: 5%;
+}
+
+.faq-icon.expand {
+  transform: rotate(45deg);
+  transition: all ease-in-out .2s;
+}
+
+/* faq answers */
+.faq-a {
+  position: relative;
+  font-size: var(--p);
+  padding: 0 20px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s ease-in-out;
+  border-radius: 0 0 6px 6px;
+}
+
+.faq-a > p {
+  font-size: var(--p);
+  padding: 1rem 0;
+}
+
+/* faq answer links */
+.link {
+  font-size: inherit;
+  background-position-y: -0%;
+  background-image: linear-gradient(180deg, transparent 50%, var(--accent) 50%) !important;
+  transition: all 0.1s ease;
+  background-size: 2px;
+  background-size: auto 190%;
+  padding: 3px 0;
+}
