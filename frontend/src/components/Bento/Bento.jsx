@@ -15,7 +15,7 @@ const Bento = () => {
             style={{color: 'rgb(0, 0, 0)'}}
         >
           <h2>
-            100M+ Tracks
+            1M+ Recipes
           </h2>
           <span style={{fontSize: 'var(--p)', fontWeight: 'normal'}}>
             and still growing!
@@ -41,18 +41,11 @@ const Bento = () => {
           </span>
           <a className='link bento-link exclude'
              style={{fontSize: 'var(--p)', fontWeight: 'normal'}}
-             href='https://developer.spotify.com/documentation/web-api'
+             href='https://rapidapi.com/'
              target='_blank'
           >
-            Spotify Web API
+            Rapid's Web API
           </a>
-
-          <BsSpotify className='spotify-icon'
-                     size={180}
-                     fill='var(--primary)'
-                    //stroke='var(--bg)'
-                    //strokeWidth={20}
-          />
         </li>
 
         <li className='second-row-col2 accent-color-box'
@@ -60,14 +53,14 @@ const Bento = () => {
         >
           <span style={{fontWeight: 'bold'}}>
             <h4>
-              7M+ Artists
+              7M+ Users
             </h4>
           </span>
           <a className='link bento-link exclude blue-bento-box'
              style={{fontSize: 'var(--p)', fontWeight: 'normal'}}
              href='#search'
           >
-            Check it out on SpotiDown
+            Check it out on Yammy.io
           </a>
         </li>
       </ul>

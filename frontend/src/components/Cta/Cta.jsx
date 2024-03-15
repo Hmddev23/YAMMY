@@ -10,13 +10,13 @@ const Cta = () => {
          id='cta'
     >
       <h2>
-        Keep
-        <span className='color-effect'> Exploring </span>
-        Beyond This Point.
+        Endless
+        <span className='color-effect'> culinary </span>
+        delights with Yammy.
       </h2>
 
       <h5>
-        Follow me for more updates!
+        Follow us for more updates!
       </h5>
 
       <a className='primary-button primary-text-contrast exclude'

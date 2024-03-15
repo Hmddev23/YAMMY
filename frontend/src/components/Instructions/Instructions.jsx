@@ -15,29 +15,28 @@ const Instructions = () => {
           How Does it Work?
         </h3>
         <h5>
-          Discover your unique musical vibe in just 6 step.
+          Uncover your distinctive culinary style in just 6 simple steps with Yammy.
         </h5>
       </div>
 
       <div className='info-box-right'>
         <p className='one step'>
-          Open the Spotify app or website and search for the song you want to get the link for.
+          Explore Diverse Recipes: Browse through a wide variety of recipes spanning different cuisines, ingredients, and cooking methods.
         </p>
         <p className='two step'>
-          Once you find the song, click on it to open the song page.
+          Save Favorites: Save your favorite recipes to your profile for easy access and reference later on.
         </p>
         <p className='three step'>
-          On the song page, locate the "..." button next to the song title and click on it.
+          Personalized Recommendations: Receive tailored recipe suggestions based on your browsing history, likes, and preferences.
         </p>
         <p className='four step'>
-          From the dropdown menu that appears, select either "Copy Song Link" or "Share,"
-          and then choose the "Copy Link" option.
+          Try New Flavors: Experiment with new ingredients, flavors, and cooking techniques to expand your culinary horizons.
         </p>
         <p className='five step'>
-          Copy the song link by right-clicking and selecting 'Copy' or using the shortcut Ctrl+C (Windows) or Command+C (Mac).
+          Share Culinary Adventures: Connect with fellow food enthusiasts, share cooking experiences, and exchange tips and tricks.
         </p>
         <p className='six step'>
-          Next, navigate to the dedicated search bar where you want to input the song link.
+          Find Your Signature Dish: Discover the recipe that resonates with your taste buds and reflects your unique culinary style.
         </p>
       </div>
     </div>

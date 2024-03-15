@@ -15,7 +15,7 @@ const Footer = () => {
           <img src={Favicon} alt='logoface' className='logoface' />
           <a href='/'>
             <p className='sitename reversed'>
-              Tasty
+              Yammy
             </p>
           </a>
         </div>
@@ -23,7 +23,7 @@ const Footer = () => {
         <div className='footer-cols'>
           <div className='footer-col'>
             <p style={{margin: '0px'}}>
-              Explore music effortlessly.
+              Explore wild tastes effortlessly.
             </p>
 
             <div className='btn-container'>
@@ -107,36 +107,27 @@ const Footer = () => {
           <p>
             Made by&nbsp;
             <a className='link reversed exclude'
+               href='https://twitter.com/LightRyuma/'
+               target='_blank'
+            >
+              @LightRyuma
+            </a>
+            &nbsp;
+            <a className='link reversed exclude'
                href='https://twitter.com/AbdelhamidMa23/'
                target='_blank'
             >
               @AbdelhamidMa23
             </a>
           </p>
-          <p>
-            Inspired by&nbsp;
-            <a className='link reversed exclude'
-               href='https://www.realtimecolors.com/'
-               target='_blank'
-            >
-              🌐
-            </a>
-            &nbsp;
-            <a className='link reversed exclude'
-               href='https://twitter.com/juxtopposed/'
-               target='_blank'
-            >
-              @Juxtopposed
-            </a>
-          </p>
 
           <small>
-            Copyright © 2023 All Rights Reserved.&nbsp;
+            Copyright © 2024 All Rights Reserved.&nbsp;
             <a className='link reversed exclude'
-               href='https://github.com/Abdev23/SPOTIDOWN_UI/blob/main/README.md'
+               href='https://github.com/Hmddev23/YAMMY/blob/main/README.md'
                target='_blank'
             >
-              Tasty
+              Yammy
             </a>
           </small>
         </div>

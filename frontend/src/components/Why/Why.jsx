@@ -16,7 +16,7 @@ const Why = () => {
          id='why'
     >
       <h2>
-        Why Tasty?
+        Why Yammy?
       </h2>
       
       <div className='section-cards' >
@@ -26,7 +26,7 @@ const Why = () => {
             Time-saving
           </h4>
           <p>
-            Instantly find music data without the search hassle. No wasted hours, just quick results!
+            Effortlessly discover delicious recipes without the search hassle. No wasted time, just tasty results
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const Why = () => {
             RealMatters
           </h4>
           <p>
-            Experience effortless music discovery mirroring real Spotify interactions.
+            Enjoy seamless recipe discovery, mimicking real-life cooking experiences with Yammy's intuitive interface
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const Why = () => {
             It’s Easy
           </h4>
           <p>
-            Explore music seamlessly with just a few clicks. Discover your favorite tracks, albums, and playlists instantly.
+            Explore recipes effortlessly with a few clicks. Discover favorite dishes instantly, hassle-free."
           </p>
         </div>
       </div>

@@ -14,42 +14,41 @@ const Hero = () => {
         <a href='/announcement'
            className='latest'
         >
-        	✨ New: Linkedin clone, and more →
+        	✨ Welcome my friend!
         </a>
         <h1>
 					{/* Explore {useEncryptTextEffect('Sounds')}: */}
-                              Explore Sounds:
+          Yammy: Flavorful
           <br />
           <span className='color-effect'>
-						Tracks
+            Fuel
           </span>
           &nbsp;,&nbsp;
           <span className='font-effect'>
-						Albums
+            for
           </span>
 					<br />
-					&amp;&nbsp;
 					<span className='font-effect'>
-						Playlists
+            Fitness!
           </span>
           &nbsp;
         </h1>
 
         <h5>
-					Effortless Music Discovery - Ready to Explore?
-					<br />Find your musical insights with the search bar below.
+          Culinary sanctuary with diverse recipes, vibrant
+          <br />community and personalized experiences for all.
         </h5>
 
         <div className='hero-cta'>
           <a href='/get-started'
-            className='primary-button primary-text-contrast highlight-toolbar'
-            style={{color: 'rgb(0, 0, 0)'}}
+             className='primary-button primary-text-contrast highlight-toolbar'
+             style={{color: 'rgb(0, 0, 0)'}}
           >
             Get Started
           </a>
           <a href='/how'
-            className='secondary-button secondary-text-contrast'
-            style={{color: 'var(--text)'}}
+             className='secondary-button secondary-text-contrast'
+             style={{color: 'var(--text)'}}
           >
             How does it work?
           </a>

@@ -24,7 +24,7 @@ const NavBar = () => {
         <img src={Favicon} alt='logoface' className='logoface' />
         <a href='/'>
           <p className='sitename'>
-            Tasty
+            Yammy
           </p>
         </a>
       </div>
@@ -42,44 +42,18 @@ const NavBar = () => {
       <div className={`menu ${isActive ? '' : 'hide'}`}
            onClick={(e) => handleToggle(e)}   
       >
-        <a href='/Donate'
-           target='_blank'
-           className='menu-item menu-item-mobile exclude'
+        <a href='/login'
+            className='primary-button primary-text-contrast highlight-toolbar'
+            style={{color: 'rgb(0, 0, 0)'}}
         >
-          Donate&nbsp;
-          <BsArrowUpRightSquare size={14} />
+          Login
         </a>
-        <a href='/download'
-           className='menu-item menu-item-mobile'
+        <a href='/register'
+            className='secondary-button secondary-text-contrast'
+            style={{color: 'var(--text)'}}
         >
-          Download
+          Register
         </a>
-
-        <div className='dropdown'>
-          <button className='dropbutton'
-                  onClick={(e) => handleToggle(e)}
-          >
-            Language&nbsp;
-            <IoIosArrowDown />
-          </button>
-          <div className='dropdown-content'>
-            <a href='/'
-               className='menu-item-mobile'
-            >
-              English
-            </a>
-            <a href='/sp'
-               className='menu-item-mobile'
-            >
-              Spanish
-            </a>
-            <a href='/fr'
-               className='menu-item-mobile'
-            >
-              Frensh
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   )

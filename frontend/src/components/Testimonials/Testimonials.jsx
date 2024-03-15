@@ -45,10 +45,10 @@ const Testimonials = () => {
               <FaUserAlt className='reviewer-icon' size={40} fill='var(--black)' />
             </div>
             <div className='reviewer-name'>
-              @CodeMaster
+              @MasterChef
               <br />
               <span style={{opacity: '0.5'}}>
-                Software Engineer
+                Chef
               </span>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Testimonials = () => {
           }
           </div>
           <p className='review'>
-            "Spotidown fuels my creativity. Spotify data in real-time? It's a songwriter's dream."
+            "Yammy ignite my culinary creativity. Real-time recipe data? A chef's ultimate tool."
           </p>
         </div>
 
@@ -69,10 +69,10 @@ const Testimonials = () => {
               <FaUserAlt className='reviewer-icon' size={40} fill='var(--black)' />
             </div>
             <div className='reviewer-name'>
-              @MelodyExplorer
+              @TastExplorer
               <br />
               <span style={{opacity: '0.5'}}>
-                Music Blogger
+                culinary blogger
               </span>
             </div>
           </div>
@@ -83,8 +83,8 @@ const Testimonials = () => {
           }
           </div>
           <p className='review'>
-            "I'm constantly amazed by Spotidown's efficiency. It fetches data from Spotify's web
-            API flawlessly, allowing me to explore a world of melodies effortlessly."
+            "I'm constantly amazed by Yammy's efficiency.
+            It fetches recipe data flawlessly, allowing me to explore a world of flavors effortlessly."
           </p>
         </div>
 
@@ -94,10 +94,10 @@ const Testimonials = () => {
               <FaUserAlt className='reviewer-icon' size={40} fill='var(--black)' />
             </div>
             <div className='reviewer-name'>
-              @GameWizard
+              @SoupWizard
               <br />
               <span style={{opacity: '0.5'}}>
-                Game Developer
+                Manager
               </span>
             </div>
           </div>
@@ -108,8 +108,9 @@ const Testimonials = () => {
           }
           </div>
           <p className='review'>
-            "Spotidown is a game-changer for audio professionals. Its accurate data fetching and
-            real-time updates ensure I always have the latest information at my fingertips."
+            "Yammy is a game-changer for culinary enthusiasts.
+            Its accurate recipe fetching and real-time updates ensure I always
+            have the latest culinary inspiration at my fingertips."
           </p>
         </div>
       </div>

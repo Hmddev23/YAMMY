@@ -20,15 +20,14 @@ ROOT CSS
 :root[data-theme="light"] {
   --text: #000000;
   --bg: #ffffff;
-  --primary: #28e269;
-  --secondary: #e8e8e8;
-  --accent: #0c72ed;
+  --primary: #efa701;
+  --secondary: #4b98d2;
+  --accent: #524a38;
+
   --static: rgba(225, 225, 225, 0.5);
   --static2: #0f0f0f;
-  --static3: rgba(35, 35, 35, 0.2);
-  --static4: rgba(35, 35, 35, 0.3);
-  /* --static3: rgb(255, 255, 255); */
-  /* --static4: rgba(225, 225, 225, 0.2); */
+  --static3: rgb(255, 255, 255);
+  --static4: rgba(225, 225, 225, 0.2);
   --static5: rgb(24, 172, 122);
   --static6: rgba(0, 0, 0, 0.05);
   --static7: rgba(0, 0, 0, 0.1);
@@ -38,10 +37,13 @@ ROOT CSS
   --static11: rgba(0, 0, 0, 0.03);
   --static12: rgba(255, 255, 255, 0.8);
   --static13: rgb(235, 235, 235);
+  --static14: rgba(0, 0, 0, 0.2);
+  --static15: rgba(255, 255, 255, 0.5);
+
   --textcontrast: #64d97b;
   --bgcontrast: #64d97b;
   --primarycontrast: #64d97b;
-  --secondarycontrast: #64d97b;
+  --secondarycontrast: #ffdd00;
   --accentcontrast: #64d97b;
 
   --error: #D74242;
@@ -57,13 +59,14 @@ ROOT CSS
 :root[data-theme="dark"] {
   --text: #ffffff;
   --bg: #000000;
-  --primary: #1dd75e;
-  --secondary: #161616;
-  --accent: #1277f3;
+  --primary: #feb710;
+  --secondary: #2d79b4;
+  --accent: #c6beac;
+
   --static: rgba(0, 0, 0, 0.5);
-  --static2: #f0f0f0;
-  --static3: rgb(24, 24, 24);
-  --static4: rgb(40, 40, 40);
+  --static2: rgb(240, 240, 240);
+  --static3: rgb(22, 22, 22);
+  --static4: rgba(225, 225, 225, 0.2);
   --static5: rgb(24, 172, 122);
   --static6: rgba(255, 255, 255, 0.15);
   --static7: rgba(255, 255, 255, 0.1);
@@ -73,10 +76,13 @@ ROOT CSS
   --static11: rgba(255, 255, 255, 0.03);
   --static12: rgba(0, 0, 0, 0.8);
   --static13: rgb(40, 40, 40);
+  --static14: rgba(255, 255, 255, 0.2);
+  --static15: rgba(0,0,0, 0.5);
+
   --textcontrast: #64d97b;
   --bgcontrast: #64d97b;
   --primarycontrast: #64d97b;
-  --secondarycontrast: #64d97b;
+  --secondarycontrast: #ffdd00;
   --accentcontrast: #64d97b;
 
   --error: #DE3E32;

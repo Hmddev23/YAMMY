@@ -40,13 +40,13 @@ const Pricing = () => {
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Access to basic metadata for Spotify songs.
+                  Access to a diverse range of recipes
                 </p>
               </div>
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Limited number of requests per day
+                  Personalized recipe recommendations
                 </p>
               </div>
             </div>
@@ -79,25 +79,25 @@ const Pricing = () => {
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Unlimited access to metadata for Spotify songs.
+                  All features of the Basic plan
                 </p>
               </div>
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Ad-free experience.
+                  Exclusive access to premium recipes and culinary content
                 </p>
               </div>
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  24/7 priority customer support.
+                  Ad-free browsing experience
                 </p>
               </div>
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Dedicated server resources for high-volume requests.
+                  Priority email support
                 </p>
               </div>
             </div>
@@ -131,31 +131,31 @@ const Pricing = () => {
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Unlimited access to metadata for Spotify songs.
+                  All features of the Pro plan
                 </p>
               </div>
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Ad-free experience.
+                  Customizable branding and integration options
                 </p>
               </div>
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  24/7 priority customer support.
+                  Dedicated account manager
                 </p>
               </div>
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Dedicated server resources for high-volume requests.
+                  Advanced analytics and reporting tools
                 </p>
               </div>
               <div className='list'>
                 <FaCheck className='check-icon' size={29} fill='var(--accent)' />
                 <p className='list-item'>
-                  Detailed analytics and insights about the Spotify music data.
+                  Tailored support and training sessions
                 </p>
               </div>
             </div>
