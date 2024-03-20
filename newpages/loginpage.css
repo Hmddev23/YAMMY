@@ -1,0 +1,129 @@
+body{
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+.logo{
+    text-align: center;
+    margin-top: 20px;
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+}
+
+.container{
+    max-width: 400px;
+    border: solid black 1px;
+    border-radius: 6px;
+    margin: 20px auto;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.input-box{
+    margin-bottom: 20px;
+    width: 88%;
+    margin: 20px auto; /* Center the input box */
+}
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid black 0.5px;
+}
+.forgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+    margin: 20px auto;
+
+}
+.forgot-password input[type="checkbox"] {
+    margin-right: 5px; /* Adjust the margin to create a gap */
+}
+.forgot-password a {
+    text-decoration: none; /* remove the underline */
+}
+
+.btn1 {
+    font-weight: bold;
+    width: 88%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bac5ba;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Ensure it takes up the full width of its container */
+    margin: 20px auto; /* Center the button horizontally and provide vertical margin */
+}
+.btn1:hover {
+    background-color: #d1cfcf;
+}
+
+.register-link{
+    text-align: center;   
+}
+
+
+.register-link a{
+    
+    text-decoration: none;
+}
+
+.btn2{
+    width: 88%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px auto; /* Center the button horizontally and provide vertical margin */
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.btn2 i {
+    margin-right: 10px; /* Add margin between icon and text */
+}
+.btn2:hover {
+    background-color:  #316FF6;
+}
+
+.btn3{
+    width: 88%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DB4437;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px auto; /* Center the button horizontally and provide vertical margin */
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+.btn3 i {
+    margin-right: 15px; /* Add margin between icon and text */
+}
+
+.btn3:hover {
+    background-color: #fc543e;
+}
+
+
