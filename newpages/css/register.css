@@ -1,13 +1,8 @@
-body{
-    background-color: #000000;
-    overflow-y: auto;
-}
-*{
-    
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins";
-}
+/*
+============
+REGISTER CSS
+============
+*/
 
 .form-popup {
     position: fixed;
@@ -15,11 +10,11 @@ body{
     left: 50%;
     max-width: 720px;
     width: 100%;
-    background-color: white;
-    border: 2px solid #000000;
+    background: var(--text);
+    /* border: 2px solid #000000; */
     border-radius: 8px;
     transform: translate(-50%, -50%);
-    overflow-y: auto; /* Allow vertical scrolling within form-popup */
+    overflow-y: auto;
 }
 
 .form-popup .form-box{
@@ -27,8 +22,7 @@ body{
 }
 
 .form-box .form-detail{
-   
-    background-color: #feb710;
+    background: var(--secondary);
 }
 
 .form-detail img{
@@ -36,10 +30,14 @@ body{
     margin-left: 30px;
     width: 80px;
     height: 80px;
-
 }
+
+.child-section {
+    flex: 1;
+}
+
 .form-box h1{
-    color: rgb(0, 0, 0);
+    color: var(--text);
     text-align: start;
     margin-left: 30px;
     margin-top: 20px;
@@ -48,22 +46,21 @@ body{
 }
 
 .form-detail p{
-    
-    color: rgb(0, 0, 0);
+    color: var(--text);
+    font-size: var(--p);
     width: 88%;
     margin: 30px;
-  
 }
-
 
 .form-content {
    
     margin: 0px auto;
     border-radius: 8px;
-    background-color: rgb(255, 255, 255);
+    background: var(--accent9);
+    color: var(--bg);
 }
 .form-content h1{
-    color: #000000;
+    color: var(--bg);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -72,7 +69,7 @@ body{
 .input-box{
     margin-bottom: 20px;
     width: 88%;
-    margin: 20px auto; /* Center the input box */
+    margin: 20px auto;
 }
 .input-box label {
     display: block;
@@ -82,7 +79,7 @@ body{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: solid black 0.5px;
+    border: solid var(--static) 0.5px;
 }
 .forgot-password {
     display: flex;
@@ -93,50 +90,87 @@ body{
 
 }
 .forgot-password input[type="checkbox"] {
-    margin-right: 5px; /* Adjust the margin to create a gap */
+    margin-right: 5px;
 }
 .forgot-password a {
-    text-decoration: none; /* remove the underline */
+    text-decoration: none;
+}
+a.link2 {
+    color: var(--primary2);
+    transition: color 0.1s ease, text-decoration 0.1s ease;
+}
+a.link2:hover {
+    text-decoration: underline;
+    color: var(--primary);
 }
 
 .btn1 {
-    font-weight: bold;
+    font-weight: 600;
     width: 88%;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #bac5ba;
+    background: var(--primary2);
+    color: var(--bg);
     cursor: pointer;
     transition: background-color 0.3s;
-    display: block; /* Ensure it takes up the full width of its container */
-    margin: 20px auto; /* Center the button horizontally and provide vertical margin */
+    display: block;
+    margin: 20px auto;
 }
+
 .btn1:hover {
-    background-color: #d1cfcf;
+    background: var(--primary);
 }
 
 .or{
     text-align: center;
+    color: var(--bg);
+    margin-bottom: 15px;
 }
+
+/*
+.or span::before,
+.or span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: var(--accent);
+}
+
+
+.or span::before {
+    left: 0;
+    margin-left: -20%;
+}
+
+.or span::after {
+    right: 0;
+    margin-right: -20%;
+} */
+
+
 .btn2{
     width: 88%;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #3b5998;
-    color: #fff;
+    background: var(--secondary5);
+    color: var(--bg);
     cursor: pointer;
-    margin: 10px auto; /* Center the button horizontally and provide vertical margin */
-    display: flex; /* Use flexbox for positioning */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn2 i {
-    margin-right: 10px; /* Add margin between icon and text */
+    margin-right: 10px;
+    font-size: var(--h5);
 }
 .btn2:hover {
-    background-color:  #316FF6;
+    background-color:  var(--secondary);
 }
 
 .btn3{
@@ -144,20 +178,21 @@ body{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #DB4437;
-    color: #fff;
+    background: var(--static10);
+    color: var(--text);
     cursor: pointer;
-    margin: 20px auto; /* Center the button horizontally and provide vertical margin */
-    display: flex; /* Use flexbox for positioning */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn3 i {
-    margin-right: 15px; /* Add margin between icon and text */
+    margin-right: 15px;
+    font-size: var(--h5);
 }
 
 .btn3:hover {
-    background-color: #fc543e;
+    background: var(--static3);
 }
 #footer{
     width: 80%;
@@ -166,38 +201,70 @@ body{
     font-size: 15px;
 }
 #footer a{
-    text-decoration: none;
-}
-#footer a:hover {
-    color: #fc543e;
+    color: var(--primary2);
 }
 
-/*TO DO! center the img to the left part
-    Fix the list items 
-    make the page responsive 
- */
+.form-detail img[alt="rounded"] {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
+.form-detail svg[alt="rounded"] {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.form-detail img[alt="rounded"] {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.form-detail svg[alt="rounded"] {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
 /* CSS for smaller devices */
 @media only screen and (max-width: 767px) {
     .form-popup {
-        width: 90%; /* Adjust width for smaller devices */
-        max-width: none; /* Remove maximum width restriction */
+        width: 90%;
+        max-width: none;
     }
     .form-box {
-        display: none; /* Hide the form-box by default on smaller devices */
+        display: none;
     }
     .form-content {
-        display: block; /* Display the form-content only on smaller devices */
+        display: block;
     }
     
     
     .form-detail {
-        display: none; /* Hide the form detail column */
+        display: none;
     }
     
     .form-content h1 {
-        margin-top: 0; /* Remove margin top for the register form */
+        margin-top: 0;
     }
-   
+    .form-detail img[alt="rounded"] {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
 }

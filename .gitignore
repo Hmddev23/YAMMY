@@ -2,4 +2,5 @@
 /images
 /static
 # /newpages
+/node_modules
 info.txt
