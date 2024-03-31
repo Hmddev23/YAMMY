@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+    <link rel="stylesheet" href="../../root-css/root.css">
+    <link rel="stylesheet" href="../../root-css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="form-popup">
+      <div class="form-box">
+        <div class="child-section form-content">
+          <header class="logo">
+            <img src="../images/favicon.svg" alt="logo png">
+          </header>
+
+          <form action="#">
+            <h1>Sign In to Yammy</h1>
+            <div class="input-box">
+              <label for="Email"> Email or Username
+                <input type="text" placeholder="example@email.com" required>
+              </label>
+            </div>
+            <div class="input-box">
+              <label for="Password">Password
+                <input type="text" placeholder="password" required>
+              </label>
+            </div>
+            <div class="forgot-password">
+              <label>
+                <input type="checkbox" />
+                Stay signed in
+              </label>
+              <a href="./resetPassword.html" class="link2">forgot my password? </a>
+            </div>
+
+            <button type="submit" class="btn1">Sign In</button>
+            <div class="register-link">
+              <p>
+                Don't have an account?
+                <a href="./register.html" class="link2">Register</a>
+              </p>
+              <span class="or"> OR </span>
+            </div>
+                        
+            <div>
+              <button type="button" class="btn2"><i class='bx bxl-facebook-circle'></i>Sign In with Facebook</button>
+              <button type="button" class="btn3"><i class='bx bxl-google'></i>Sign In with Gmail</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

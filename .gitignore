@@ -1,6 +1,6 @@
 
 /images
-/static
+# /static
 # /newpages
 /node_modules
 info.txt

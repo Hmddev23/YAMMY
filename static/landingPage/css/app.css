@@ -1,0 +1,145 @@
+
+/*
+================
+LANDING PAGE CSS
+================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100%; /* Set height to 100% of viewport height */
+}
+
+header {
+  background-color: rgb(15, 13, 13);
+  color: white;
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo h1 {
+  color: beige;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+#forward-slash {
+  color: rgb(245, 64, 64);
+}
+
+#slogan {
+  color: rgb(245, 64, 64);
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+  background-color: beige;
+  padding-left: 40px; /* Adjust padding to better fit smaller screens */
+}
+
+.navBar a {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 64px; /* Reduce margin-right for better fit on smaller screens */
+  text-decoration: none;
+  position: relative;
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navBar {
+      flex-wrap: wrap; /* Allow navbar items to wrap on smaller screens */
+  }
+
+  .navBar a {
+      margin-bottom: 10px; /* Add bottom margin to separate navigation links */
+  }
+}
+
+.navBar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: .3s;
+}
+
+.navBar a:hover::before {
+  width: 100%;
+}
+
+.nav-links {
+  list-style-type: none; /* Remove bullets */
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the left */
+  height: 70vh;
+  text-align: left; /* Align text to the left */
+}
+
+.page-content h2 {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.page-content p {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 25px; /* Remove default margin to avoid extra space */
+  width: 500px;
+}
+
+.social-media-icons img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+footer {
+  margin-bottom: 30px;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.infos {
+  margin-bottom: 25px;
+}
