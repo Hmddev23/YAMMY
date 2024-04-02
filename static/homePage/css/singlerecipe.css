@@ -1,0 +1,336 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    width: 100%;
+    height: 100vh;
+ 
+}
+
+header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    background-color: #000000;
+}
+.nav-bar{
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+.nav-bar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    text-decoration: none;
+}
+
+.nav-bar img{
+    width: 30px;
+}
+
+.nav-bar .logo h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-bar .links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-bar .links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-bar .links a:hover{
+    color: #2d79b4;
+}
+
+.nav-bar .logout-btn{
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #feb710;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+   
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    .nav-bar .links {
+        display: block;
+        list-style: none;
+        gap: 35px;
+    }
+    .links{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  .text-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-container{
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  .hero-container{
+    display: flex;
+  }
+
+  .recipe-card {
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 88%; 
+    margin: 30px auto;
+  }
+  
+  .recipe-header {
+    padding: 15px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+  }
+  .recipe-body{
+    padding-top: 0; 
+    flex-grow: 1;
+  }
+  .recipe-body  a {
+    text-decoration: none;
+    color: #ff2121;
+  }
+
+  
+  .recipe-title {
+    
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-align: center;
+    
+  }
+  
+  .recipe-author, .recipe-date {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .recipe-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; 
+    justify-content: center;
+  }
+  
+  .recipe-rating i {
+    color: #f9a825;
+    margin-right: 2px;
+    
+  }
+  
+  
+  .rating-count {
+    font-size: 0.8rem;
+    color: #666;
+    margin-left: 5px;
+  }
+  
+  .recipe-image {
+    width: auto; 
+    max-width: 50%; 
+    height: auto; 
+    overflow: hidden;
+    margin-left: auto; 
+    width: fit-content;
+  }
+  
+  .recipe-image img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .recipe-details {
+    flex-grow: 1; 
+  }
+  
+  .recipe-stats {
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+    align-items: center;
+
+   
+    
+  }
+  
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .recipe-ingredients {
+   
+    margin: 30px auto;
+  }
+  .recipe-ingredients h3 {
+    margin: 10px auto; 
+  }
+  
+  .servings {
+  
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .recipe-ingredients ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recipe-ingredients li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+  
+  .recipe-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+  }
+  
+  .recipe-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .recipe-actions button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .recipe-actions i {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+
+  @media (max-width: 768px) {
+    .recipe-header {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .recipe-image {
+      margin-left: 0; 
+      max-width: 100%; 
+    }
+  
+    .recipe-stats {
+     display: flex;
+      max-width: 350px;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    .recipe-rating{
+      margin-bottom: 30px;
+    }
+    
+    .recipe-ingredients {    
+      text-align: center;  
+      margin: 0 auto;
+      
+    }
+    .recipe-ingredients h3{
+      margin: 20px 0 ;
+    }
+    .recipe-ingredients p{
+      margin: 10px 0;
+    }
+    .recipe-ingredients ul {
+      padding: 25px 0;
+    }
+
+  }
