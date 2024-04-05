@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="../../root-css/root.css" />
+    <link rel="stylesheet" href="../../root-css/global.css" />
+    <link rel="stylesheet" href="../css/home.css">
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="hero-sect">
+      <h1>ALL RECIPES</h1>
+      <p>
+        We've organized these recipes every way we could think of so you don't
+        have to! Dietary restrictions, weeknight dinners, meal prep recipes, some
+        of our most tried-and-true... no matter how you browse, we're sure, you'll
+        find just what you were looking for.
+      </p>
+    </div>
+    <div class="search-bar">
+      <button type="submit">
+        <i class="bx bx-search"></i>
+      </button>
+      <input type="text" placeholder="Search by keyword" />
+    </div>
+
+    <!-- carousel html -->
+    <div class="carousel-container">
+      <div class="wrapper">
+        <i class="bx bx-chevron-left arrowIcon" id="left"></i>
+        <div class="carousel">
+          <img src="../images/american_food.jpg" alt="image american" draggable="false" />
+          <img src="../images/asian_food.jpg" alt="image asian" draggable="false" />
+          <img src="../images/frensh_food.jpg" alt="image french" draggable="false" />
+          <img src="../images/indian_food.jpg" alt="image indian" draggable="false" />
+          <img src="../images/italian_food.jpg" alt="image italian" draggable="false" />
+          <img src="../images/mexican_food.jpg" alt="image mexican" draggable="false" />
+        </div>
+        <i class="bx bx-chevron-right arrowIcon" id="right"></i>
+      </div>
+    </div>
+    <!-- carousel html -->
+
+    <section class="rated-recipies">
+      <div class="content-recipies">
+        <h2>
+          <i class='bx bx-trophy'></i>
+          Top Rated Rated Recipies
+        </h2>
+        <p>
+          Out of all many recipies on Yammy,
+          <br>
+          these are our shining stars-the recipies we come back to again and again (and again). 
+        </p>
+      </div>
+    </section>
+
+    <script src="../js/home.js"></script>
+  </body>
+</html>

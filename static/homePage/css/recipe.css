@@ -1,14 +1,9 @@
 
-*{
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins";
-}
-body{
-    width: 100%;
-    height: 100vh;
- 
-}
+/*
+==========
+RECIPE CSS
+==========
+*/
 
 header{
     position: relative;
@@ -296,41 +291,42 @@ header{
   }
   
 
-  @media (max-width: 768px) {
-    .recipe-header {
-      flex-direction: column; 
-      align-items: center; 
-    }
-  
-    .recipe-image {
-      margin-left: 0; 
-      max-width: 100%; 
-    }
-  
-    .recipe-stats {
-     display: flex;
-      max-width: 350px;
-      justify-content: space-between;
-      margin: 0 auto;
-    }
-
-    .recipe-rating{
-      margin-bottom: 30px;
-    }
-    
-    .recipe-ingredients {    
-      text-align: center;  
-      margin: 0 auto;
-      
-    }
-    .recipe-ingredients h3{
-      margin: 20px 0 ;
-    }
-    .recipe-ingredients p{
-      margin: 10px 0;
-    }
-    .recipe-ingredients ul {
-      padding: 25px 0;
-    }
-
+@media (max-width: 768px) {
+  .recipe-header {
+    flex-direction: column; 
+    align-items: center; 
   }
+
+  .recipe-image {
+    margin-left: 0; 
+    max-width: 100%; 
+  }
+
+  .recipe-stats {
+    display: flex;
+    max-width: 350px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .recipe-rating{
+    margin-bottom: 30px;
+  }
+  
+  .recipe-ingredients {    
+    text-align: center;  
+    margin: 0 auto;
+    
+  }
+  .recipe-ingredients h3{
+    margin: 20px 0 ;
+  }
+
+  .recipe-ingredients p{
+    margin: 10px 0;
+  }
+
+  .recipe-ingredients ul {
+    padding: 25px 0;
+  }
+}

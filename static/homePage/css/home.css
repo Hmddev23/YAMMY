@@ -1,0 +1,177 @@
+
+/*
+========
+HOME CSS
+========
+*/
+
+.hero-sect {
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #feb710;
+  height: 300px;
+}
+
+.hero-sect h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.hero-sect p {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto; 
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.search-bar {
+  position: relative;
+  bottom: 4%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: hsl(0,0%,100%);
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.search-bar button i {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* carousell css ------------------------- */
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  overflow-x: scroll;
+  padding: 0 35px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--text);
+  color: var(--bg);
+  width: 60px;
+  height: 60px;
+  font-size: var(--h1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.wrapper i:first-child {
+  left: -28px;
+}
+
+.wrapper i:last-child {
+  right: -28px;
+}
+
+.wrapper .carousel {
+  white-space: nowrap;
+  font-size: 0;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 230px;
+  width: calc(100% / 3);
+  object-fit: cover;
+  margin-left: 14px;
+  border-radius: 10px;
+  filter: blur(3px);
+  opacity: 0.7;
+  user-select: none;
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+
+/* carousell css ------------------------- */
+
+.rated-recipies {
+  max-width: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.rated-recipies i {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  color: var(--primary);
+}
+
+.rated-recipies h2 {
+  text-align: center;
+}
+
+.rated-recipies p {
+  position: relative;
+  left: 45px;
+  margin: 20px;
+  text-align: center;
+}
