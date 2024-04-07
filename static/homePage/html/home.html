@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,52 +19,62 @@
   </head>
 
   <body>
-    <div class="hero-sect">
-      <h1>ALL RECIPES</h1>
-      <p>
-        We've organized these recipes every way we could think of so you don't
-        have to! Dietary restrictions, weeknight dinners, meal prep recipes, some
-        of our most tried-and-true... no matter how you browse, we're sure, you'll
-        find just what you were looking for.
-      </p>
-    </div>
-    <div class="search-bar">
-      <button type="submit">
-        <i class="bx bx-search"></i>
-      </button>
-      <input type="text" placeholder="Search by keyword" />
-    </div>
-
-    <!-- carousel html -->
-    <div class="carousel-container">
-      <div class="wrapper">
-        <i class="bx bx-chevron-left arrowIcon" id="left"></i>
-        <div class="carousel">
-          <img src="../images/american_food.jpg" alt="image american" draggable="false" />
-          <img src="../images/asian_food.jpg" alt="image asian" draggable="false" />
-          <img src="../images/frensh_food.jpg" alt="image french" draggable="false" />
-          <img src="../images/indian_food.jpg" alt="image indian" draggable="false" />
-          <img src="../images/italian_food.jpg" alt="image italian" draggable="false" />
-          <img src="../images/mexican_food.jpg" alt="image mexican" draggable="false" />
-        </div>
-        <i class="bx bx-chevron-right arrowIcon" id="right"></i>
-      </div>
-    </div>
-    <!-- carousel html -->
-
-    <section class="rated-recipies">
-      <div class="content-recipies">
-        <h2>
-          <i class='bx bx-trophy'></i>
-          Top Rated Rated Recipies
-        </h2>
+    <main>
+      <div class="hero-sect">
+        <h2>ALL RECIPES</h2>
         <p>
-          Out of all many recipies on Yammy,
-          <br>
-          these are our shining stars-the recipies we come back to again and again (and again). 
+          We've organized these recipes every way we could think of so you don't
+          have to! Dietary restrictions, weeknight dinners, meal prep recipes, some
+          of our most tried-and-true... no matter how you browse, we're sure, you'll
+          find just what you were looking for.
         </p>
       </div>
-    </section>
+
+      <div class="search" id="search">
+        <h2>Search for recipes Now!</h2>
+        <div class="search-row">
+          <div class="search-input-cont">
+            <input class="search-input" id="search-input" type="text" placeholder="panecackes..." />
+          </div>
+          <div class="search-separator"></div>
+          <button class="search-button" id="search-button" type="button">
+            <i class="bx bx-search search-icon"></i>
+            Search
+          </button>
+        </div>
+      </div>
+
+      <!-- carousel html -->
+      <div class="carousel-container">
+        <div class="wrapper">
+          <i class="bx bx-chevron-left arrowIcon" id="left"></i>
+          <div class="carousel">
+            <img src="../images/american_food.jpg" alt="image american" draggable="false" />
+            <img src="../images/asian_food.jpg" alt="image asian" draggable="false" />
+            <img src="../images/frensh_food.jpg" alt="image french" draggable="false" />
+            <img src="../images/indian_food.jpg" alt="image indian" draggable="false" />
+            <img src="../images/italian_food.jpg" alt="image italian" draggable="false" />
+            <img src="../images/mexican_food.jpg" alt="image mexican" draggable="false" />
+          </div>
+          <i class="bx bx-chevron-right arrowIcon" id="right"></i>
+        </div>
+      </div>
+      <!-- carousel html -->
+
+      <section class="rated-recipies">
+        <div class="content-recipies">
+          <h2>
+            <i class='bx bx-trophy'></i>
+            Top Rated Rated Recipies
+          </h2>
+          <p>
+            Out of all many recipies on Yammy,
+            <br>
+            these are our shining stars-the recipies we come back to again and again (and again). 
+          </p>
+        </div>
+      </section>
+    </main>
 
     <script src="../js/home.js"></script>
   </body>
