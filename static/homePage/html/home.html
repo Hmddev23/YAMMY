@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,22 +44,38 @@
         </div>
       </div>
 
-      <!-- carousel html -->
       <div class="carousel-container">
-        <div class="wrapper">
-          <i class="bx bx-chevron-left arrowIcon" id="left"></i>
-          <div class="carousel">
-            <img src="../images/american_food.jpg" alt="image american" draggable="false" />
-            <img src="../images/asian_food.jpg" alt="image asian" draggable="false" />
-            <img src="../images/frensh_food.jpg" alt="image french" draggable="false" />
-            <img src="../images/indian_food.jpg" alt="image indian" draggable="false" />
-            <img src="../images/italian_food.jpg" alt="image italian" draggable="false" />
-            <img src="../images/mexican_food.jpg" alt="image mexican" draggable="false" />
+        <div class="carousel-track">
+          <i class="bx bx-chevron-left arrow-btn" id="prev-btn"></i>
+          <div id="carousel" class="carousel">
+            <a href="#" class="carousel-card" draggable="false">
+              <img id="card-img" class="card-img" src="../images/american_food.jpg" alt="image american" draggable="false" />
+              <span class="card-title"> American </span>
+            </a>
+            <a href="#" class="carousel-card" draggable="false">
+              <img id="card-img" class="card-img" src="../images/asian_food.jpg" alt="image asian" draggable="false" />
+              <span class="card-title"> Asian </span>
+            </a>
+            <a href="#" class="carousel-card" draggable="false">
+              <img id="card-img" class="card-img" src="../images/french_food.jpg" alt="image french" draggable="false" />
+              <span class="card-title"> French </span>
+            </a>
+            <a href="#" class="carousel-card" draggable="false">
+              <img id="card-img" class="card-img" src="../images/indian_food.jpg" alt="image indian" draggable="false" />
+              <span class="card-title"> Indian </span>
+            </a>
+            <a href="#" class="carousel-card" draggable="false">
+              <img id="card-img" class="card-img" src="../images/italian_food.jpg" alt="image italian" draggable="false" />
+              <span class="card-title"> Italian </span>
+            </a>
+            <a href="#" class="carousel-card" draggable="false">
+              <img id="card-img" class="card-img" src="../images/mexican_food.jpg" alt="image mexican" draggable="false" />
+              <span class="card-title"> Mexican </span>
+            </a>
           </div>
-          <i class="bx bx-chevron-right arrowIcon" id="right"></i>
+          <i class="bx bx-chevron-right arrow-btn" id="next-btn"></i>
         </div>
       </div>
-      <!-- carousel html -->
 
       <section class="rated-recipies">
         <div class="content-recipies">
