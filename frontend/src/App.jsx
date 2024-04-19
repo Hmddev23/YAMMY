@@ -9,15 +9,27 @@ import {
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import ToolBar from './components/ToolBar/ToolBar';
-import Home from './pages/Home/Home';
+
+import Landing from './pages/Landing/Landing';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Terms from './pages/Terms/Terms';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import Register from './pages/Register/Register';
+import Login from './pages/Login/Login';
+import ResetPassword from './pages/ResetPassword/ResetPassword';
+import Home from './pages/Home/Home';
+import Profile from './pages/Profile/Profile';
+import Recipe from './pages/Recipe/Recipe'
+import NotFound from './pages/NotFound/NotFound';
+
+import ProtectedRoute from './utils/ProtectedRoute';
+import { AuthProvider } from './context/AuthContext';
+
 import './App.css';
 
 
-const Layout = () => {
+const LandingLayout = () => {
   return (
     <div className='app'>
       <NavBar />
@@ -28,14 +40,33 @@ const Layout = () => {
   );
 }
 
+const FormLayout = () => {
+  return (
+    <div className='app'>
+      <Outlet />
+    </div>
+  );
+}
+
+const HomeLayout = () => {
+  return (
+    <AuthProvider isLogedIn={false}>
+    {/* <AuthProvider> */}
+      <div className='app'>
+        <Outlet />
+      </div>
+    </AuthProvider>
+  );
+}
+
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
+    element: <LandingLayout />,
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Landing />
       },
       {
         path: '/about-us',
@@ -52,6 +83,54 @@ const router = createBrowserRouter([
       {
         path: '/privacy-policy',
         element: <PrivacyPolicy />
+      }
+    ]
+  },
+  {
+    path: '/',
+    element: <FormLayout />,
+    children: [
+      {
+        path: '/register',
+        element: <Register />
+      },
+      {
+        path: '/login',
+        element: <Login />
+      },
+      {
+        path: '/reset-password',
+        element: <ResetPassword />
+      }
+    ]
+  },
+  {
+    path: '/',
+    element: <HomeLayout />,
+    children: [
+      {
+        path: '/home',
+        element: (
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        )
+      },
+      {
+        path: '/profile',
+        element: (
+          <ProtectedRoute>
+            <Profile />
+          </ProtectedRoute>
+        )
+      },
+      {
+        path: '/recipe',
+        element: (
+          <ProtectedRoute>
+            <Recipe />
+          </ProtectedRoute>
+        )
       }
     ]
   }

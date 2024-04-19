@@ -1,0 +1,327 @@
+
+/*
+=========
+FORMS CSS
+=========
+*/
+
+.form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 720px;
+  width: 100%;
+  background: var(--text);
+  /* border: 2px solid #000000; */
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+}
+
+.form-popup .form-box {
+  display: flex;
+}
+
+.form-box .form-detail {
+  background: var(--secondary);
+}
+
+.form-box .logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-box .logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.child-section {
+  flex: 1;
+}
+
+.form-box h1 {
+  color: var(--text);
+  text-align: start;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.form-detail p {
+  color: var(--text);
+  font-size: var(--p);
+  width: 88%;
+  margin: 30px;
+}
+
+.form-content {
+  margin: 0px auto;
+  border-radius: 8px;
+  background: var(--accent9);
+  color: var(--bg);
+}
+
+.form-content h1 {
+  color: var(--bg);
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  width: 88%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid var(--static) 0.5px;
+}
+
+.input-box label[for=""] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input-box input[type="checkbox"] {
+  width: 4%;
+  margin-right: 5px;
+}
+
+.input-box a[class="link2"] {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+
+
+a.link2 {
+  color: var(--secondary2);
+  cursor: pointer;
+  transition: color 0.1s ease, text-decoration 0.1s ease;
+}
+
+a.link2:hover {
+  text-decoration: underline;
+  color: var(--secondary);
+}
+
+.btn {
+  width: 88%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn i {
+  margin-right: 10px;
+  font-size: var(--h5);
+}
+
+.btn svg {
+  margin-right: 10px;
+  font-size: var(--h5);
+}
+
+.btn1 {
+  font-weight: 600;
+  background: var(--primary2);
+  color: var(--bg);
+}
+
+.btn1:hover {
+  background: var(--primary);
+}
+
+.btn1 i {
+  display: none;
+}
+
+.btn1 i.visible {
+  display: block;
+  animation: spin 1.5s linear infinite;
+}
+
+.btn1 svg {
+  display: none;
+}
+
+.btn1 svg.visible {
+  display: block;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.navigation-link p {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: var(--p);
+}
+
+.separator {
+  position: relative;
+  width: 70%;
+  height: 1px;
+  margin: 25px auto;
+  background: var(--primary6);
+}
+
+.separator::before {
+  content: 'or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0 20px;
+  transform: translate(-50%, -50%);
+  background: var(--accent9);
+  color: var(--bg);
+}
+
+.btn2 {
+  background: var(--secondary5);
+  color: var(--bg);
+}
+
+.btn2:hover {
+  background-color:  var(--secondary);
+}
+
+.btn3 {
+  background: var(--static10);
+  color: var(--text);
+}
+
+.btn3:hover {
+  background: var(--static3);
+}
+
+#footer{
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 15px;
+}
+
+.form-detail img[alt="form image"] {
+  /* border-radius: 50%; */
+  width: 280px;
+  height: 280px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.form-detail svg[alt="form image"] {
+  width: 280px;
+  height: 280px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* CSS for smaller devices */
+@media only screen and (max-width: 767px) {
+  .form-popup {
+    width: 90%;
+    max-width: none;
+  }
+
+  .form-box {
+    display: none;
+  }
+
+  .form-content {
+    display: block;
+  }
+
+  .form-detail {
+    display: none;
+  }
+
+  .form-content h1 {
+    margin-top: 0;
+  }
+
+  .form-detail img[alt="form image"] {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+}
+
+
+/* LOGIN PAGE CSS */
+.register-link {
+  text-align: center;
+}
+
+.register-link a {
+  text-decoration: none;
+}
+
+.register-link p {
+  text-align: center;
+  font-size: var(--p);
+}
+
+
+/* RESET PASSWORD CSS */
+.form-content p {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: var(--p);
+}
+
+.not-robot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 88%;
+  margin: 20px auto;
+  padding: 15px;
+  border: solid rgb(173, 171, 171) 1px;
+  background: var(--accent9);
+  border-radius: 5px;
+}
+
+.not-robot input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.not-robot img {
+  height: 50px;
+  width: 50px;
+}
